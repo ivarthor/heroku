@@ -1,5 +1,6 @@
 from sys import argv
-from bottle import route, run, template
+import bottle
+from bottle import *
 
 @route('/')
 def index():
@@ -24,4 +25,4 @@ def jobbi():
 
 
 
-run(host='0.0.0.0', port=agrv[1])
+bottle.run(host='0.0.0.0', port=agrv[1])
